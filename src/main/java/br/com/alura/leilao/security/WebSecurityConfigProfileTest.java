@@ -27,7 +27,7 @@ public class WebSecurityConfigProfileTest extends WebSecurityConfigurerAdapter {
 			.antMatchers("/db/**").permitAll()	
 			.antMatchers("/h2-console/**").permitAll()
 			.antMatchers("/leiloes").permitAll()
-			.antMatchers("/css/**").permitAll();;
+			.antMatchers("/css/**").permitAll();
         
 		http.authorizeRequests().anyRequest().authenticated();
 
