@@ -4,6 +4,7 @@ import br.com.alura.leilao.model.Lance;
 import br.com.alura.leilao.model.Leilao;
 import br.com.alura.leilao.model.Usuario;
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
@@ -26,6 +27,11 @@ public class PropondoLancesStep {
         this.list = new ArrayList<>();
         this.leilao = new Leilao("Tablet XPTO");
     }
+
+/*    @After
+    public void tearDown() {
+        System.out.println("after");
+    }*/
 
     @Dado("um lance valido")
     public void dado_um_lance_valido() {
